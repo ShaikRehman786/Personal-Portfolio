@@ -1,11 +1,11 @@
-/* Header.css */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #333;
-  color: #fff;
+  color: white;
+  position: relative;
 }
 
 .logo a {
@@ -14,43 +14,40 @@
   font-size: 1.5rem;
 }
 
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.nav-links li a {
-  color: #fff;
+.nav-links a {
+  color: white;
   text-decoration: none;
-  font-weight: 500;
 }
 
-.nav-links li a:hover {
-  color: #00c9a7;
-}
-
-/* Responsive Styles */
+/* Small screen styling */
 @media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
   .nav-links {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 0;
-    background-color: #333;
-    width: 200px;
-    display: none;
+    right: 20px;
+    background: #444;
+    border-radius: 8px;
     padding: 1rem;
-    border-left: 1px solid #444;
+    width: 200px;
   }
 
-  .nav-links.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 1.5rem;
+  .nav-links a {
+    padding: 0.5rem 0;
   }
 }
