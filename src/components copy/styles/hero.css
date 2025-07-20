@@ -31,3 +31,20 @@
 }
 
 
+.type-writer span {
+  color: #ff4757;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+
+
+.hero-text h2, .hero-text h1 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
