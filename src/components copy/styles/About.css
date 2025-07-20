@@ -1,0 +1,30 @@
+.about-section {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.about-section strong {
+  color: #00c9a7;
+}
+
+
+.resume-btn{
+  color: rgb(3, 145, 145);
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px dotted rgb(3, 140, 113);
+  
+}
