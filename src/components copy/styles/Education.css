@@ -1,35 +1,53 @@
 .education-section {
-  padding: 4rem 2rem;
+  padding: 3rem 1rem;
   background-color: #fff;
   text-align: center;
 }
 
 .education-section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #333;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .education-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .education-item {
   background-color: #f8f8f8;
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .education-item h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #00c9a7;
+  margin-bottom: 0.5rem;
 }
 
 .education-item p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #555;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .education-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .education-item h3 {
+    font-size: 1.8rem;
+  }
+
+  .education-item p {
+    font-size: 1.2rem;
+  }
 }
