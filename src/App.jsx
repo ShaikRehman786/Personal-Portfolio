@@ -1,31 +1,26 @@
-import { useState } from "react"
-import React  from "react"
-import Header from "./components copy/Header"
-import Hero from "./components copy/Hero"
-
-
+import './App.css';
+import About from './components/About';
+import Contact from './components/Contact';
+import Experience from './components/Experience';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    {/* <Header />
-    <Hero />
-    <About />
-    <Skills />
-    <Education />
-    <Experience />
-    <Contact />
-    <Footer /> */}
-
-{/* 
-    <Header />
-    <Hero />
-    <About /> */}
-
-    </>
-  )
+    <div className="App">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

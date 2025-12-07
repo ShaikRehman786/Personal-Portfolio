@@ -1,0 +1,161 @@
+.experience {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.experience-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.exp-section {
+  border-left: 3px solid #667eea;
+  padding-left: 2rem;
+}
+
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.exp-icon {
+  font-size: 1.8rem;
+  color: #667eea;
+}
+
+.exp-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+}
+
+.exp-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.exp-content {
+  background: #f7fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.exp-item {
+  /* No extra styling needed */
+}
+
+.exp-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.exp-top h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+  flex: 1;
+}
+
+.exp-period {
+  background: #667eea;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.exp-place {
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.exp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-list li {
+  color: #4a5568;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.exp-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 3rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .exp-section {
+    padding-left: 1.5rem;
+  }
+
+  .exp-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exp-period {
+    align-self: flex-start;
+  }
+
+  .exp-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .exp-top h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 2.5rem 1rem;
+  }
+
+  .exp-content {
+    padding: 1.2rem;
+  }
+
+  .exp-icon {
+    font-size: 1.5rem;
+  }
+}

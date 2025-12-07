@@ -1,0 +1,260 @@
+.projects {
+  padding: 5rem 2rem;
+  background: #ffffff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Featured E-Commerce Project */
+.featured-project {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 3rem;
+  color: white;
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+}
+
+.featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.featured-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.featured-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.highlight-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.tech-item {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.project-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+}
+
+.github-btn {
+  background: white;
+  color: #667eea;
+}
+
+.github-btn:hover {
+  background: transparent;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.demo-btn {
+  background: transparent;
+  color: white;
+}
+
+.demo-btn:hover {
+  background: white;
+  color: #667eea;
+  transform: translateY(-3px);
+}
+
+/* Frontend Projects Section */
+.frontend-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.frontend-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.frontend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.frontend-card {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.frontend-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.frontend-card:hover::before {
+  transform: scaleX(1);
+}
+
+.frontend-card:hover {
+  border-color: #667eea;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.2);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 0.7rem;
+}
+
+.card-description {
+  color: #718096;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.card-arrow {
+  color: #667eea;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.frontend-card:hover .card-arrow {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects {
+    padding: 3rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .featured-project {
+    padding: 2rem;
+  }
+
+  .featured-title {
+    font-size: 1.6rem;
+  }
+
+  .featured-description {
+    font-size: 1rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .frontend-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .frontend-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-project {
+    padding: 1.5rem;
+  }
+
+  .tech-list {
+    gap: 0.5rem;
+  }
+
+  .tech-item {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
