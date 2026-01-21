@@ -3,34 +3,54 @@ import './styles/About.css';
 
 const About = () => {
   const highlights = [
-    { icon: <FaCode />, title: 'Clean Code', desc: 'Learning best practices and coding standards' },
-    { icon: <FaLightbulb />, title: 'Quick Learner', desc: 'Adapting to new technologies rapidly' },
-    { icon: <FaRocket />, title: 'Motivated', desc: 'Eager to take on new challenges' },
-    { icon: <FaUsers />, title: 'Team Player', desc: 'Great communication and collaboration skills' }
+    {
+      icon: <FaCode />,
+      title: 'Clean Coding',
+      desc: 'I try to write simple and readable code'
+    },
+    {
+      icon: <FaLightbulb />,
+      title: 'Quick Learner',
+      desc: 'I learn new tools and concepts step by step'
+    },
+    {
+      icon: <FaRocket />,
+      title: 'Motivated',
+      desc: 'I like improving my skills by building projects'
+    },
+    {
+      icon: <FaUsers />,
+      title: 'Team Player',
+      desc: 'Comfortable working with others and sharing ideas'
+    }
   ];
 
   return (
     <section id="about" className="about">
       <div className="container">
         <h2 className="section-title">About Me</h2>
+
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a recent graduate with a strong passion for web development and software engineering.
-              During my academic journey, I've built a solid foundation in programming and developed 
-              several projects that showcase my skills.
+              I am an MCA fresher interested in web development.
+              I have learned frontend and backend basics and built
+              a few projects using modern technologies.
             </p>
+
             <p>
-              I'm proficient in modern web technologies and constantly learning new frameworks and tools.
-              My goal is to join a dynamic team where I can contribute, learn from experienced developers,
-              and grow as a professional.
+              I enjoy working on real projects because it helps me
+              understand concepts better. I try to write clean code
+              and follow good practices while learning.
             </p>
+
             <p>
-              When I'm not coding, you'll find me taking online courses, working on personal projects,
-              or exploring the latest tech trends and best practices in software development.
+              I am looking for fresher opportunities, collaboration,
+              or small freelance work where I can improve my skills
+              and grow as a developer.
             </p>
           </div>
-          
+
           <div className="about-highlights">
             {highlights.map((item, index) => (
               <div key={index} className="highlight-card">

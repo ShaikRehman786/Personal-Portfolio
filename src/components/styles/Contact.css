@@ -141,3 +141,20 @@
     gap: 3rem;
   }
 }
+
+
+
+.contact-info p {
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.contact-item p {
+  font-size: 0.95rem;
+}

@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <p>
-            Made with <FaHeart className="heart" /> by Rehman
+            © 2026 Shaik Rehman | MCA Fresher
           </p>
           <p className="copyright">
             © {new Date().getFullYear()} All rights reserved.
