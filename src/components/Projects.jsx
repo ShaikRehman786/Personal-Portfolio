@@ -22,7 +22,7 @@ const Projects = () => {
       'REST APIs',
       'React (in progress)'
     ],
-    github: '',
+    github: 'https://github.com/ShaikRehman786/Car-and-Bike-Rental-System',
     highlights: [
       'Backend completed with authentication and REST APIs',
       'Frontend development currently in progress',
